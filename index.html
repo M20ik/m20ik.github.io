@@ -9,13 +9,16 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #333;
+            background-image: url('background.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
             color: #fff;
         }
         .container {
             max-width: 600px;
             margin: 50px auto;
-            background-color: #1a1a1a;
+            background-color: rgba(0, 0, 0, 0.5);
             padding: 20px;
             border-radius: 10px;
             box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
@@ -37,6 +40,9 @@
             cursor: pointer;
             transition: background-color 0.3s ease;
             margin: 5px;
+            display: block;
+            width: 100%;
+            max-width: 200px;
         }
         button:hover {
             background-color: #0056b3;
@@ -50,7 +56,8 @@
         <button onclick="window.location.href = 'https://www.example1.com';">Перейти на Example 1</button>
         <button onclick="window.location.href = 'https://www.example2.com';">Перейти на Example 2</button>
         <button onclick="window.location.href = 'https://www.example3.com';">Перейти на Example 3</button>
+        <button onclick="window.location.href = 'https://www.example4.com';">Перейти на Example 4</button>
+        <button onclick="window.location.href = 'https://www.example5.com';">Перейти на Example 5</button>
     </div>
 </body>
 </html>
-
