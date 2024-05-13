@@ -8,8 +8,20 @@
         body {
             font-family: Arial, sans-serif;
             text-align: center;
-            margin: 50px auto;
+            margin: 0;
+            padding: 0;
+            background-image: url('background.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+        .container {
             max-width: 600px;
+            margin: 50px auto;
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
         }
         h1 {
             color: #333;
@@ -43,10 +55,12 @@
     </style>
 </head>
 <body>
-    <h1>Добро пожаловать на сайт-переходник!</h1>
-    <p>Выберите, куда вы хотите перейти:</p>
-    <button onclick="window.location.href = 'https://www.example1.com';">Перейти на Example 1</button>
-    <button onclick="window.location.href = 'https://www.example2.com';">Перейти на Example 2</button>
-    <button onclick="window.location.href = 'https://www.example3.com';">Перейти на Example 3</button>
+    <div class="container">
+        <h1>Добро пожаловать на сайт-переходник!</h1>
+        <p>Выберите, куда вы хотите перейти:</p>
+        <button onclick="window.location.href = 'https://www.example1.com';">Перейти на Example 1</button>
+        <button onclick="window.location.href = 'https://www.example2.com';">Перейти на Example 2</button>
+        <button onclick="window.location.href = 'https://www.example3.com';">Перейти на Example 3</button>
+    </div>
 </body>
 </html>
