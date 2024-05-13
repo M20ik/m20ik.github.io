@@ -13,9 +13,13 @@
         }
         h1 {
             color: #333;
+            font-size: 28px;
+            margin-bottom: 20px;
+            animation: pulse 1.5s infinite alternate;
         }
         p {
             color: #666;
+            font-size: 16px;
             margin-bottom: 20px;
         }
         button {
@@ -27,9 +31,14 @@
             cursor: pointer;
             transition: background-color 0.3s ease;
             margin: 5px;
+            animation: pulse 1.5s infinite alternate;
         }
         button:hover {
             background-color: #0056b3;
+        }
+        @keyframes pulse {
+            from { transform: scale(1); }
+            to { transform: scale(1.1); }
         }
     </style>
 </head>
