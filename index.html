@@ -3,63 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Сайт-переходник</title>
+    <title>Download Tools</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-image: url('background.jpg');
-            background-size: cover;
-            background-position: center;
-            background-attachment: fixed;
-            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
         }
         .container {
-            max-width: 600px;
-            margin: 50px auto;
-            background-color: rgba(0, 0, 0, 0.6);
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
         }
-        h1 {
-            font-size: 32px;
-            margin-bottom: 20px;
-        }
-        p {
-            font-size: 18px;
-            margin-bottom: 20px;
-        }
-        button {
-            background-color: #1e3a5f;
-            color: #fff;
-            border: none;
-            padding: 10px 20px;
-            font-size: 16px;
-            cursor: pointer;
-            transition: background-color 0.3s ease;
-            margin: 5px;
-            display: block;
-            width: 100%;
-            max-width: 200px;
+        .button {
+            background-color: black;
+            color: white;
+            padding: 15px 30px;
+            text-align: center;
+            text-decoration: none;
             border-radius: 5px;
+            font-size: 18px;
+            cursor: pointer;
         }
-        button:hover {
-            background-color: #2a4a78;
+        .button:hover {
+            background-color: #333;
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>Добро пожаловать на сайт-переходник!</h1>
-        <p>Выберите, куда вы хотите перейти:</p>
-        <button onclick="window.location.href = 'https://www.example1.com';">Перейти на Example 1</button>
-        <button onclick="window.location.href = 'https://www.example2.com';">Перейти на Example 2</button>
-        <button onclick="window.location.href = 'https://www.example3.com';">Перейти на Example 3</button>
-        <button onclick="window.location.href = 'https://www.example4.com';">Перейти на Example 4</button>
-        <button onclick="window.location.href = 'https://www.example5.com';">Перейти на Example 5</button>
+        <a href="#" class="button">TWRP</a>
+        <a href="#" class="button">MTK client</a>
+        <a href="#" class="button">UsbDk</a>
+        <a href="#" class="button">SP Flash Tool</a>
+        <a href="#" class="button">Platform Tools</a>
     </div>
 </body>
 </html>
+
+
 
