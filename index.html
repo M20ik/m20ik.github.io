@@ -1,6 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <title>Защищенный сайт</title>
+    <script>
+        // Запрет контекстного меню
+        document.addEventListener('contextmenu', function(e) {
+            e.preventDefault();
+        });
+
+        // Запрет клавиш F12, Ctrl+Shift+I, Ctrl+Shift+J, Ctrl+U
+        document.onkeydown = function(e) {
+            if (e.keyCode == 123) {
+                return false; // F12
+            }
+            if (e.ctrlKey && e.shiftKey && e.keyCode == 73) {
+                return false; // Ctrl+Shift+I
+            }
+            if (e.ctrlKey && e.shiftKey && e.keyCode == 74) {
+                return false; // Ctrl+Shift+J
+            }
+            if (e.ctrlKey && e.keyCode == 85) {
+                return false; // Ctrl+U
+            }
+        };
+
+        // Проверка на отладчик
+        setInterval(function() {
+            if (window.console && (console.firebug || console.table && /firebug/i.test(console.table()))) {
+                while (true) {}
+            }
+        }, 1000);
+    </script>
     <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-XWES8QPTZP"></script>
 <script>
